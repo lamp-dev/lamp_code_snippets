@@ -1,0 +1,57 @@
+@charset "UTF-8";
+.coupon-code {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  line-height: 1;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+.coupon-code:hover {
+  opacity: 0.8;
+}
+.coupon-code__inner {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.coupon-code__text {
+  position: absolute;
+  left: 0%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4%;
+  width: 100%;
+}
+.coupon-code:before, .coupon-code:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.4s;
+}
+.coupon-code:before {
+  content: "コピーしました：" attr(data-code);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  font-size: inherit;
+}
+.coupon-code:after {
+  content: "";
+  opacity: 0;
+  z-index: 1;
+}
+.coupon-code.is-copied:before {
+  opacity: 1;
+}
+.coupon-code.is-copied:after {
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=coupon.css.map */

@@ -1,0 +1,57 @@
+.coupon-code {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  line-height: 1;
+  font-weight: bold;
+  transition: opacity 0.2s;
+  &:hover {
+    opacity: 0.8;
+  }
+  &__inner {
+    display: block;
+    position: relative;
+    cursor: pointer;
+  }
+  &__text {
+    position: absolute;
+    left: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+    width: 100%;
+  }
+  &:before,
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.4s;
+  }
+  &:before {
+    content: "コピーしました：" attr(data-code);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    font-size: inherit;
+  }
+  &:after {
+    content: "";
+    opacity: 0;
+    z-index: 1;
+  }
+  &.is-copied {
+    &:before {
+      opacity: 1;
+    }
+    &:after {
+      opacity: 0.8;
+    }
+  }
+}

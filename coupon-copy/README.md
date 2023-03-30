@@ -41,5 +41,5 @@ assets フォルダ内にある`coupon.css`、`coupon.js`を適宜読み込ま�
 
 例：
 
-<link rel="stylesheet" href="assets/css/coupon.css" />
-<script src="assets/js/coupon.js"></script>
+'<link rel="stylesheet" href="assets/css/coupon.css" />'
+'<script src="assets/js/coupon.js"></script>'

@@ -40,8 +40,6 @@ data-code="CPN-CODE" data-code-color="#000,#fff" data-font-size="30px,16px" data
 assets フォルダ内にある`coupon.css`、`coupon.js`を適宜読み込ませてください。
 
 例：
-`
 
 <link rel="stylesheet" href="assets/css/coupon.css" />
 <script src="assets/js/coupon.js"></script>
-`

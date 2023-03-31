@@ -47,10 +47,3 @@ assets フォルダ内にある`coupon.css`、`coupon.js`を適宜読み込ま�
 `<link rel="stylesheet" href="assets/css/coupon.css" />`
 `<script src="assets/js/coupon.js"></script>`
 
-#### サンプル
-
-ローカルに落として index.html を開くか、
-
-https://codepen.io/ericakira/pen/WNgBwrG
-
-こちらからも簡易で確認できます。
